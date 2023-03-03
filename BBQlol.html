@@ -6,6 +6,7 @@
         </title>
     </head>
     <body bgcolor=#FFF0F5>
+        <form method="post" action="BBQlol.php">
         <center>
             <font size=50><em>來嘍來嘍！資管系烤肉來嘍!🍖</em></font><br/>
             <img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/05/Grilled-BBQ-Skewers-with-Pineapples-and-Lemons.jpg" width="700"><br/>
@@ -40,16 +41,14 @@
                 </tr>
             </table>
         </p>
-
-        請提供你的姓名<input type="text" name="name"><br/>
-        請提供你的學號<input type="text" name="id"><br/>
-        是否願意參加本屆資管系系烤呢？
-        yes<input type="radio" name="dept">
-        no<input type="radio" name="dept"><br/>
-        請提供你的email<input type="text" name="email"><br/>
         
-
-        <input type="submit" name="送出"><br/>
+        請提供你的姓名<input type="text" name="name" required><br/>
+        請提供你的學號<input type="text" name="id" required><br/>
+        請提供你的email<input type="text" name="email" required><br/>
+        是否願意參加本屆資管系系烤呢？
+        會<input type="radio" name="dept" value="會">
+        不會<input type="radio" name="dept" value="不會"><br/>
+        <input type="submit"><input type="reset"><br/>
        
     </body>
 </html>
